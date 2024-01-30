@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Create Reminder:</legend>
+            <input type="text" placeholder="Title" id="title"/>
+            <br />
+            <br />
+            <select name="Priority" id="priority">
+                <option disabled>Priority:</option>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+            <br />
+            <br />
+            <input type="text" placeholder="Color" id="color" />
+            <br />
+            <br />
+            <textarea placeholder="Description" id="description"></textarea>
+            <br />
+            <br />
+            <button id="add">Add Reminder</button>
+        </fieldset>
+    </form>
+    <br/>
+    <button id="showAll">Show All Reminders</button>
+
+    <table border="1px, solid, black" id="table"></table>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
